@@ -89,7 +89,7 @@ export const getRecentAppointmentList = async () => {
     );
   }
 };
-export const updateAppointment = async ({ appointment, userId, appoitmentId, type }: UpdateAppointmentParams) => {
+export const updateAppointment = async ({ appointment, userId, timeZone, appointmentId, type }: UpdateAppointmentParams) => {
   try {
     const updatedAppointment = await databases.updateDocument(
       DATABASE_ID!,

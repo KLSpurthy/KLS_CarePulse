@@ -16,6 +16,7 @@ const AppointmentModal = ({
   patientId,
   userId,
   appointment,
+  timeZone,
   type,
 }: {
   patientId: string;
